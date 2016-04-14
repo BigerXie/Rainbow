@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.Core", "Rainbow.Core\Rainbow.Core.csproj", "{AE0CC292-1B22-4EBA-A216-5140EBDAF87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.Share", "Rainbow.Share\Rainbow.Share.csproj", "{8EF0C560-6515-4159-8DB4-4ADFAF6536CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rainbow.UnitTest", "Rainbow.UnitTest\Rainbow.UnitTest.csproj", "{2CF6CBBF-47A4-4629-BD5A-F19813CE115F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE0CC292-1B22-4EBA-A216-5140EBDAF87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0CC292-1B22-4EBA-A216-5140EBDAF87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0CC292-1B22-4EBA-A216-5140EBDAF87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0CC292-1B22-4EBA-A216-5140EBDAF87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF0C560-6515-4159-8DB4-4ADFAF6536CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF0C560-6515-4159-8DB4-4ADFAF6536CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF0C560-6515-4159-8DB4-4ADFAF6536CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF0C560-6515-4159-8DB4-4ADFAF6536CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF6CBBF-47A4-4629-BD5A-F19813CE115F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF6CBBF-47A4-4629-BD5A-F19813CE115F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF6CBBF-47A4-4629-BD5A-F19813CE115F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF6CBBF-47A4-4629-BD5A-F19813CE115F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

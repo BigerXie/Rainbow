@@ -1,0 +1,5 @@
+E:\Rainbow\RainbowSolution\Rainbow.Share\bin\Debug\Rainbow.Share.dll
+E:\Rainbow\RainbowSolution\Rainbow.Share\bin\Debug\Rainbow.Share.pdb
+E:\Rainbow\RainbowSolution\Rainbow.Share\obj\Debug\Rainbow.Share.csprojResolveAssemblyReference.cache
+E:\Rainbow\RainbowSolution\Rainbow.Share\obj\Debug\Rainbow.Share.dll
+E:\Rainbow\RainbowSolution\Rainbow.Share\obj\Debug\Rainbow.Share.pdb

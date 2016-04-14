@@ -1,0 +1,9 @@
+E:\Rainbow\RainbowSolution\Rainbow.Core\bin\Debug\Rainbow.Core.dll
+E:\Rainbow\RainbowSolution\Rainbow.Core\bin\Debug\Rainbow.Core.pdb
+E:\Rainbow\RainbowSolution\Rainbow.Core\obj\Debug\Rainbow.Core.dll
+E:\Rainbow\RainbowSolution\Rainbow.Core\obj\Debug\Rainbow.Core.pdb
+E:\Rainbow\RainbowSolution\Rainbow.Core\bin\Debug\Spring.Core.dll
+E:\Rainbow\RainbowSolution\Rainbow.Core\bin\Debug\Spring.Core.pdb
+E:\Rainbow\RainbowSolution\Rainbow.Core\bin\Debug\Spring.Core.xml
+E:\Rainbow\RainbowSolution\Rainbow.Core\bin\Debug\Common.Logging.dll
+E:\Rainbow\RainbowSolution\Rainbow.Core\obj\Debug\Rainbow.Core.csprojResolveAssemblyReference.cache
