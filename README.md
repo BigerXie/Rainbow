@@ -1,2 +1,2 @@
 # Rainbow
-Rainbow
+Rainbow is a application framework.
