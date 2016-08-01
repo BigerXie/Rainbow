@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -12,3 +12,6 @@
 /Rainbow.Shell/obj/Debug
 /Rainbow.UnitTest/bin/Debug
 /Rainbow.UnitTest/obj/Debug
+Rainbow.Controls/Rainbow.Controls.csproj.user
+Rainbow.Share/bin/Debug/
+Rainbow.Share/obj/Debug/
