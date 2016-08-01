@@ -13,5 +13,10 @@ namespace Rainbow.Shell
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            //pack://application:,,,/Rainbow.Shell;component/Views/Login/LoginWindow.xaml
+            this.StartupUri = new Uri("pack://application:,,,/Rainbow.Shell;component/ShellWindow.xaml");
+        }
     }
 }

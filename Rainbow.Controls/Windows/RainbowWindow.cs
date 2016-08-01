@@ -13,16 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Rainbow.Shell
+namespace Rainbow.Controls.Windows
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public class RainbowWindow : Window
     {
-        public MainWindow()
+        static RainbowWindow()
         {
-            InitializeComponent();
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(RainbowWindow), new FrameworkPropertyMetadata(typeof(RainbowWindow)));
         }
     }
 }

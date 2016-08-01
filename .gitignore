@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Rainbow.Client.Core/bin/Debug
+/Rainbow.Client.Core/obj/Debug
+/Rainbow.Controls/bin/Debug
+/Rainbow.Controls/obj/Debug
+/Rainbow.Core/bin/Debug
+/Rainbow.Core/obj/Debug
+/Rainbow.Shell/bin/Debug
+/Rainbow.Shell/obj/Debug
+/Rainbow.UnitTest/bin/Debug
