@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace Rainbow.Controls.Buttons
 {
-    public class RbIconButton : Control
+    public class RbIconButton : Button
     {
         static RbIconButton()
         {
