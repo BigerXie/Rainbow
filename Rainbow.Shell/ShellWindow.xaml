@@ -1,34 +1,49 @@
 ﻿<controls:MetroWindow x:Class="Rainbow.Shell.ShellWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-        Title="Rainbow-Framework" GlowBrush="{DynamicResource AccentColorBrush}" Icon="/Images/RainbowCloud.png"
-        Height="600" Width="800" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" 
+        xmlns:rbControls="clr-namespace:Rainbow.Controls;assembly=Rainbow.Controls" NonActiveWindowTitleBrush="{StaticResource BlueSolidColorBrush}"
+        Title="Rainbow-Framework" GlowBrush="{StaticResource AccentColorBrush}" Icon="/Images/RainbowCloud.png"
+        Height="600" Width="800" WindowState="Maximized" WindowTitleBrush="{StaticResource BlueSolidColorBrush}" WindowStartupLocation="CenterScreen">
     <controls:MetroWindow.Resources>
-        <LinearGradientBrush x:Key="HeaderGradientBrush" StartPoint="0.5,0" EndPoint="0.5,1">
-            <GradientStop Color="#2E3236" Offset="0"/>
-            <GradientStop Color="#2A2F32" Offset="0.3"/>
-            <GradientStop Color="#222427" Offset="0.6"/>
-            <GradientStop Color="#1F2123" Offset="1"/>
-        </LinearGradientBrush>
-        <SolidColorBrush x:Key="BlueSolidColorBrush" Color="#4595EC"></SolidColorBrush>
+
     </controls:MetroWindow.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="5"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="3"/>
             <RowDefinition Height="35"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Name="HeaderGrid" Background="{StaticResource HeaderGradientBrush}">
-
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Catalog}" Width="45" Height="45" IconHeight="30" IconWidth="30"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_User}" Width="45" Height="45" IconHeight="30" IconWidth="30"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Message}" Width="45" Height="45" IconHeight="25" IconWidth="30"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Setup}" Width="45" Height="45" IconHeight="30" IconWidth="30"></rbControls:RbIconButton>
+            </StackPanel>
         </Grid>
         <Grid Grid.Row="1" Background="{StaticResource BlueSolidColorBrush}"/>
-        <Grid Grid.Row="2" Background="#D6DBE9" Name="MainGrid">
-
-        </Grid>
-        <Grid Grid.Row="3" Background="#24272C" Name="FooterGrid">
+        <Grid Grid.Row="2" Background="{StaticResource SilverSolidColorBrush}" Name="MainGrid">
            
+        </Grid>
+        <Grid Grid.Row="3" Background="{StaticResource BlueSolidColorBrush}"/>
+        <Grid Grid.Row="4" Background="{StaticResource BlackSolidColorBrush4}" Name="FooterGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <rbControls:RbIconButton IconPath="{StaticResource Path_HomePage}" Width="30" Height="30" IconHeight="27" IconWidth="27"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_FullDisplay}" Width="30" Height="30" IconHeight="24" IconWidth="25"></rbControls:RbIconButton>
+            </StackPanel>
         </Grid>
     </Grid>
 </controls:MetroWindow>

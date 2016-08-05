@@ -1,5 +1,4 @@
-﻿using Rainbow.Client.Core.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rainbow.Shell.Models
 {
-    public class UserModel : RootModel
+    public class UserModel
     {
         private string _Name;
         public string Name
@@ -18,7 +17,7 @@ namespace Rainbow.Shell.Models
                 if (this._Name != value)
                 {
                     this._Name = value;
-                    this.RaisePropertyChanged("Name");
+                    //this.RaisePropertyChanged("Name");
                 }
             }
         }
@@ -31,7 +30,7 @@ namespace Rainbow.Shell.Models
                 if (this._Password != value)
                 {
                     this._Password = value;
-                    this.RaisePropertyChanged("Password");
+                    //this.RaisePropertyChanged("Password");
                 }
             }
         }
@@ -44,7 +43,7 @@ namespace Rainbow.Shell.Models
                 if (this._IP != value)
                 {
                     this._IP = value;
-                    this.RaisePropertyChanged("IP");
+                    //this.RaisePropertyChanged("IP");
                 }
             }
         }

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Rainbow.Controls.Page
+namespace Rainbow.Controls
 {
     public class RbPage : ContentControl
     {

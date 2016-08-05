@@ -150,6 +150,10 @@
       <Project>{e44a8076-aa74-47f6-a602-8df1900f5839}</Project>
       <Name>Rainbow.Client.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rainbow.Controls\Rainbow.Controls.csproj">
+      <Project>{6d887b07-58d1-400f-a9de-e2cb2d608271}</Project>
+      <Name>Rainbow.Controls</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\RainbowCloud.png" />

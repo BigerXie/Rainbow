@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Rainbow.Controls.Buttons
+namespace Rainbow.Controls
 {
     public class RbIconButton : Button
     {
@@ -21,5 +21,41 @@ namespace Rainbow.Controls.Buttons
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(RbIconButton), new FrameworkPropertyMetadata(typeof(RbIconButton)));
         }
+
+        public Geometry IconPath
+        {
+            get { return (Geometry)GetValue(IconPathProperty); }
+            set { SetValue(IconPathProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconPath.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconPathProperty =
+            DependencyProperty.Register("IconPath", typeof(Geometry), typeof(RbIconButton), new PropertyMetadata(null));
+
+
+
+        public double IconWidth
+        {
+            get { return (double)GetValue(IconWidthProperty); }
+            set { SetValue(IconWidthProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconWidth.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconWidthProperty =
+            DependencyProperty.Register("IconWidth", typeof(double), typeof(RbIconButton), new PropertyMetadata(15.0));
+
+
+
+        public double IconHeight
+        {
+            get { return (double)GetValue(IconHeightProperty); }
+            set { SetValue(IconHeightProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconHeight.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconHeightProperty =
+            DependencyProperty.Register("IconHeight", typeof(double), typeof(RbIconButton), new PropertyMetadata(15.0));
+
+
     }
 }

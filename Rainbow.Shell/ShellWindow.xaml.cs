@@ -24,7 +24,7 @@ namespace Rainbow.Shell
     {
         public ShellWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
     }
 }

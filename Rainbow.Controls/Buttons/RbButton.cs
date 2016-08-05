@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace Rainbow.Controls.Buttons
+namespace Rainbow.Controls
 {
     public class RbButton : Button
     {
