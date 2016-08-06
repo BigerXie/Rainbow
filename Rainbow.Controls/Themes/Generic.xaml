@@ -6,6 +6,8 @@
         <!--styles-->
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Styles/Colors.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Styles/Fonts.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Styles/Controls.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Styles/PathResource.xaml"/>
         <!--controls-->
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Windows/RainbowWindow.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Buttons/RbIconButton.xaml"/>

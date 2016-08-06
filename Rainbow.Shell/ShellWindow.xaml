@@ -23,16 +23,25 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                <rbControls:RbIconButton IconPath="{StaticResource Path_Catalog}" Width="45" Height="45" IconHeight="30" IconWidth="30"></rbControls:RbIconButton>
-                <rbControls:RbIconButton IconPath="{StaticResource Path_User}" Width="45" Height="45" IconHeight="30" IconWidth="30"></rbControls:RbIconButton>
-                <rbControls:RbIconButton IconPath="{StaticResource Path_Message}" Width="45" Height="45" IconHeight="25" IconWidth="30"></rbControls:RbIconButton>
-                <rbControls:RbIconButton IconPath="{StaticResource Path_Setup}" Width="45" Height="45" IconHeight="30" IconWidth="30"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Catalog}"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_User}"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Message}" IconHeight="25"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Setup}"></rbControls:RbIconButton>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1" Background="{StaticResource BlueSolidColorBrush}"/>
-        <Grid Grid.Row="2" Background="{StaticResource SilverSolidColorBrush}" Name="MainGrid">
-           
-        </Grid>
+        <Border Grid.Row="2" Background="{StaticResource SilverSolidColorBrush}" Name="MainPlaceHolder">
+            <rbControls:RbPage Icon="/Images/Catalog.png" Title="功能目录">
+                <rbControls:RbPage.HeaderContent>
+                    <TextBlock Text="Say Hi RainBow!"/>
+                </rbControls:RbPage.HeaderContent>
+                <rbControls:RbPage.Content>
+                    <Grid Background="AliceBlue">
+                        
+                    </Grid>
+                </rbControls:RbPage.Content>
+            </rbControls:RbPage>
+        </Border>
         <Grid Grid.Row="3" Background="{StaticResource BlueSolidColorBrush}"/>
         <Grid Grid.Row="4" Background="{StaticResource BlackSolidColorBrush4}" Name="FooterGrid">
             <Grid.ColumnDefinitions>

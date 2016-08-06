@@ -9,6 +9,6 @@ namespace Rainbow.Shell
 {
     public class ShellWindowViewModel : BindableBase
     {
-
+        
     }
 }

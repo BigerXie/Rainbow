@@ -28,6 +28,7 @@
     
     <Color x:Key="SilverColor">#D6DBE9</Color>
     <!--Base Brushs-->
+    <SolidColorBrush x:Key="WhiteSolidColorBrush" Color="{DynamicResource WhiteColor}"/>
     <SolidColorBrush x:Key="GraySolidColorBrush" Color="{DynamicResource GrayColor}"/>
     <SolidColorBrush x:Key="BlueSolidColorBrush" Color="{DynamicResource BlueColor}"/>
     <SolidColorBrush x:Key="SilverSolidColorBrush" Color="{DynamicResource SilverColor}"/>

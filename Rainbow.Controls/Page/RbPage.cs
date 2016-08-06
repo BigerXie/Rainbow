@@ -21,5 +21,54 @@ namespace Rainbow.Controls
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(RbPage), new FrameworkPropertyMetadata(typeof(RbPage)));
         }
+
+
+
+        public object HeaderContent
+        {
+            get { return (object)GetValue(HeaderContentProperty); }
+            set { SetValue(HeaderContentProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for HeaderContent.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty HeaderContentProperty =
+            DependencyProperty.Register("HeaderContent", typeof(object), typeof(RbPage), new PropertyMetadata(null));
+
+
+
+        public Brush HeaderBackground
+        {
+            get { return (Brush)GetValue(HeaderBackgroundProperty); }
+            set { SetValue(HeaderBackgroundProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for HeaderBackground.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty HeaderBackgroundProperty =
+            DependencyProperty.Register("HeaderBackground", typeof(Brush), typeof(RbPage), new PropertyMetadata(null));
+
+
+
+        public ImageSource Icon
+        {
+            get { return (ImageSource)GetValue(IconProperty); }
+            set { SetValue(IconProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Icon.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconProperty =
+            DependencyProperty.Register("Icon", typeof(ImageSource), typeof(RbPage), new PropertyMetadata(null));
+
+
+
+        public string Title
+        {
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Title.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TitleProperty =
+            DependencyProperty.Register("Title", typeof(string), typeof(RbPage), new PropertyMetadata(null));
+
     }
 }

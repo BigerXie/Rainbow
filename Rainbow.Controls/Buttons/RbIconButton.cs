@@ -57,5 +57,29 @@ namespace Rainbow.Controls
             DependencyProperty.Register("IconHeight", typeof(double), typeof(RbIconButton), new PropertyMetadata(15.0));
 
 
+
+        public VerticalAlignment IconVerticalAlignment
+        {
+            get { return (VerticalAlignment)GetValue(IconVerticalAlignmentProperty); }
+            set { SetValue(IconVerticalAlignmentProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconVerticalAlignment.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconVerticalAlignmentProperty =
+            DependencyProperty.Register("IconVerticalAlignment", typeof(VerticalAlignment), typeof(RbIconButton), new PropertyMetadata(VerticalAlignment.Center));
+
+
+
+        public HorizontalAlignment IconHorizontalAlignment
+        {
+            get { return (HorizontalAlignment)GetValue(IconHorizontalAlignmentProperty); }
+            set { SetValue(IconHorizontalAlignmentProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconHorizontalAlignment.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconHorizontalAlignmentProperty =
+            DependencyProperty.Register("IconHorizontalAlignment", typeof(HorizontalAlignment), typeof(RbIconButton), new PropertyMetadata(HorizontalAlignment.Center));
+
+
     }
 }
