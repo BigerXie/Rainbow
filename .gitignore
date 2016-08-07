@@ -15,3 +15,5 @@
 Rainbow.Controls/Rainbow.Controls.csproj.user
 Rainbow.Share/bin/Debug/
 Rainbow.Share/obj/Debug/
+/Rainbow.Controls.Test/obj/Debug
+/Rainbow.Controls.Test/bin/Debug

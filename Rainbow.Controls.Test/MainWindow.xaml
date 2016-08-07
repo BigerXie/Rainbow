@@ -1,0 +1,20 @@
+﻿<Window x:Class="Rainbow.Controls.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush1}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush2}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush3}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush4}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush5}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush6}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush7}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush8}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush9}"/>
+            <Grid Width="50" Height="25" Background="{DynamicResource GraySolidColorBrush0}"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -7,11 +7,13 @@
     
     
     <Style TargetType="{x:Type local:RbIconButton}">
-        <Setter Property="Height" Value="45"/>
-        <Setter Property="Width" Value="45"/>
-        <Setter Property="IconHeight" Value="30"/>
-        <Setter Property="IconWidth" Value="30"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="IconHeight" Value="27"/>
+        <Setter Property="IconWidth" Value="27"/>
         <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:RbIconButton}">
@@ -42,7 +44,8 @@
                                 <VisualState x:Name="Disable" />
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Border Name="border" RenderTransformOrigin="0.5,0.5" Background="Transparent" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                        <Border Name="border" RenderTransformOrigin="0.5,0.5" Background="Transparent" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                                Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
                             <Border.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>

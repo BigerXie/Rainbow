@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:local="clr-namespace:Rainbow.Controls"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
+
     <Style x:Key="RbIconButtonNonScaleStyle" TargetType="{x:Type local:RbIconButton}">
         <Setter Property="Height" Value="45"/>
         <Setter Property="Width" Value="45"/>
@@ -43,6 +43,50 @@
                                   Width="{TemplateBinding IconWidth}" Height="{TemplateBinding IconHeight}">
                             </Path>
                         </Border>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="RbIconButtonShadowStyle" TargetType="{x:Type local:RbIconButton}" BasedOn="{StaticResource RbIconButtonNonScaleStyle}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:RbIconButton}">
+                    <Border>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonState">
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{DynamicResource GraySolidColorBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="ellipse">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{DynamicResource GraySolidColorBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Disable" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid Name="border" RenderTransformOrigin="0.5,0.5" Background="Transparent" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                            <Grid.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                </TransformGroup>
+                            </Grid.RenderTransform>
+                            <Ellipse x:Name="ellipse" HorizontalAlignment="{TemplateBinding IconHorizontalAlignment}" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"
+                                     Fill="Transparent" StrokeThickness="0" VerticalAlignment="{TemplateBinding IconVerticalAlignment}"/>
+                            <Path x:Name="path" Data="{TemplateBinding IconPath}" Stroke="{DynamicResource BlackSolidColorBrush6}" 
+                                  HorizontalAlignment="{TemplateBinding IconHorizontalAlignment}" VerticalAlignment="{TemplateBinding IconVerticalAlignment}" StrokeThickness="1" Stretch="Fill"
+                                  Width="{TemplateBinding IconWidth}" Height="{TemplateBinding IconHeight}">
+                            </Path>
+                        </Grid>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

@@ -13,5 +13,8 @@
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Buttons/RbIconButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Buttons/RbButton.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Page/RbPage.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/PageBar/RbPageBar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/PageBarItem/RbPageBarItem.xaml"/>
     </ResourceDictionary.MergedDictionaries>
+
 </ResourceDictionary>

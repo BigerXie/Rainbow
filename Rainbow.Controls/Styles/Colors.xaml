@@ -9,6 +9,7 @@
     <Color x:Key="BlackColor4">#1F2123</Color>
     <Color x:Key="BlackColor5">#24272C</Color>
     <Color x:Key="BlackColor6">#FF4D4D4D</Color>
+    <Color x:Key="BlackColor7">#16181A</Color>
     
     <Color x:Key="WhiteColor">#FFFFFFFF</Color>
     
@@ -30,15 +31,33 @@
     <!--Base Brushs-->
     <SolidColorBrush x:Key="WhiteSolidColorBrush" Color="{DynamicResource WhiteColor}"/>
     <SolidColorBrush x:Key="GraySolidColorBrush" Color="{DynamicResource GrayColor}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush1" Color="{DynamicResource GrayColor1}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush2" Color="{DynamicResource GrayColor2}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush3" Color="{DynamicResource GrayColor3}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush4" Color="{DynamicResource GrayColor4}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush5" Color="{DynamicResource GrayColor5}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush6" Color="{DynamicResource GrayColor6}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush7" Color="{DynamicResource GrayColor7}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush8" Color="{DynamicResource GrayColor8}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush9" Color="{DynamicResource GrayColor9}"/>
+    <SolidColorBrush x:Key="GraySolidColorBrush0" Color="{DynamicResource GrayColor0}"/>
     <SolidColorBrush x:Key="BlueSolidColorBrush" Color="{DynamicResource BlueColor}"/>
     <SolidColorBrush x:Key="SilverSolidColorBrush" Color="{DynamicResource SilverColor}"/>
     <SolidColorBrush x:Key="BlackSolidColorBrush4" Color="{DynamicResource BlackColor4}"/>
+    <SolidColorBrush x:Key="BlackSolidColorBrush5" Color="{DynamicResource BlackColor5}"/>
     <SolidColorBrush x:Key="BlackSolidColorBrush6" Color="{DynamicResource BlackColor6}"/>
+    <SolidColorBrush x:Key="BlackSolidColorBrush7" Color="{DynamicResource BlackColor7}"/>
+    
     <LinearGradientBrush x:Key="HeaderGradientBrush" StartPoint="0.5,0" EndPoint="0.5,1">
         <GradientStop Color="{DynamicResource BlackColor1}" Offset="0"/>
         <GradientStop Color="{DynamicResource BlackColor2}" Offset="0.3"/>
         <GradientStop Color="{DynamicResource BlackColor3}" Offset="0.6"/>
         <GradientStop Color="{DynamicResource BlackColor4}" Offset="1"/>
     </LinearGradientBrush>
-        
+    <LinearGradientBrush x:Key="BorderGrayGradientBrush" EndPoint="49.832,11.349" StartPoint="47.988,11.344" MappingMode="Absolute">
+        <GradientStop Color="#FF1E2125" Offset="0"/>
+        <GradientStop Color="#FF1E2125" Offset="0.5"/>
+        <GradientStop Color="#FF2D2F34" Offset="0.5"/>
+        <GradientStop Color="#FF2D2F34" Offset="1"/>
+    </LinearGradientBrush>
 </ResourceDictionary>
