@@ -20,17 +20,24 @@
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup Name="CommonState">
-                                <VisualState Name="MouseOver">
+                                <VisualState Name="RbMouseOver">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.Background)" Storyboard.TargetName="Part_Border">
                                             <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{DynamicResource BlueSolidColorBrush}"/>
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
-                                <VisualState Name="Normal">
+                                <VisualState Name="RbNormal">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.Background)" Storyboard.TargetName="Part_Border">
                                             <DiscreteObjectKeyFrame KeyTime="0" Value="{TemplateBinding Background}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState Name="RbSelected">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.Background)" Storyboard.TargetName="Part_Border">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{DynamicResource BlueSolidColorBrush}"/>
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -40,24 +47,21 @@
                                 Background="{TemplateBinding Background}" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="28"/>
                                     <ColumnDefinition Width="auto"/>
                                     <ColumnDefinition Width="22"/>
-                                </Grid.ColumnDefinitions>    
-                                <Image Grid.Column="0" Height="20" Width="20" Source="{TemplateBinding Icon}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0"/>
-                                <TextBlock Grid.Column="1" FontSize="{TemplateBinding FontSize}" FontFamily="{TemplateBinding FontFamily}" Margin="5,0"
-                                       VerticalAlignment="Center" HorizontalAlignment="Center" Text="{TemplateBinding Title}" Foreground="{DynamicResource BlackSolidColorBrush6}"/>
+                                </Grid.ColumnDefinitions>
+                                <ContentPresenter Grid.Column="0" ContentTemplate="{TemplateBinding ContentTemplate}"/>
                                 <local:RbIconButton x:Name="Part_CloseButton" Grid.Column="2" Style="{DynamicResource RbIconButtonShadowStyle}" Height="{TemplateBinding CloseButtonHeight}"
                                        Width="{TemplateBinding CloseButtonWidth}" IconHeight="10" IconWidth="10" Margin="2,0"
                                        IconPath="{StaticResource Path_Close}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                             </Grid>
                         </Border>
                     </Border>
-                    <ControlTemplate.Triggers>
+                    <!--<ControlTemplate.Triggers>
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" Value="{DynamicResource BlueSolidColorBrush}" TargetName="Part_Border"/>
                         </Trigger>
-                    </ControlTemplate.Triggers>
+                    </ControlTemplate.Triggers>-->
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

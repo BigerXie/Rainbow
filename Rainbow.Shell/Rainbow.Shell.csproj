@@ -89,6 +89,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Constant\RbWindowLayoutConstant.cs" />
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="ShellWindowViewModel.cs" />
     <Compile Include="Models\ShellWindowModel.cs" />
     <Compile Include="Views\Login\LoginWindow.xaml.cs">

@@ -6,12 +6,29 @@
         <ResourceDictionary Source="pack://application:,,,/Rainbow.Controls;component/Styles/Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     <Style TargetType="{x:Type local:RbPageBar}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid> 
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="28"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Height="20" Width="20" Source="{Binding Icon}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4,0"/>
+                        <TextBlock Grid.Column="1" FontSize="13" Margin="5,0"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding Title}" Foreground="{DynamicResource BlackSolidColorBrush6}"/>
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:RbPageBar}">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
-
+                        <StackPanel x:Name="Part_Container" Orientation="Horizontal" IsItemsHost="True" HorizontalAlignment="Center" VerticalAlignment="Center"></StackPanel>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

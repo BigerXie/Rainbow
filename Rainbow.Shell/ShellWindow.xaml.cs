@@ -22,9 +22,17 @@ namespace Rainbow.Shell
     /// </summary>
     public partial class ShellWindow : MetroWindow
     {
+        public ShellWindowViewModel ViewModel { get; set; }
         public ShellWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            this.ViewModel = new ShellWindowViewModel();
+            this.ViewModel.MenuItems = new System.Collections.ObjectModel.ObservableCollection<Models.MenuItem>();
+            this.ViewModel.MenuItems.Add(new Models.MenuItem() { Title = "功能目录", Icon = "/Images/Catalog.png" });
+            this.ViewModel.MenuItems.Add(new Models.MenuItem() { Title = "彩虹桥", Icon = "/Images/Catalog.png" });
+            this.ViewModel.MenuItems.Add(new Models.MenuItem() { Title = "功能目录", Icon = "/Images/Catalog.png" });
+            this.rbPageBar.ItemsSource = this.ViewModel.MenuItems;
+            
         }
     }
 }
