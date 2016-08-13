@@ -1,5 +1,4 @@
-﻿using MahApps.Metro.Controls;
-using Rainbow.Shell.Constant;
+﻿using Rainbow.Shell.Constant;
 using System;
 using System.Collections.Generic;
 using System.Linq;

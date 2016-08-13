@@ -3,13 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
         xmlns:actions="clr-namespace:Rainbow.Shell.Actions"              
-        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:rbControls="clr-namespace:Rainbow.Controls;assembly=Rainbow.Controls"
-        Title="Rainbow-Framework"
         Icon="/Images/RainbowCloud.png" Name="mainWindow" Height="600" Width="800" 
-        WindowState="Maximized"
-        WindowStartupLocation="CenterScreen">
-    <!--NonActiveWindowTitleBrush="{StaticResource BlueSolidColorBrush}"  GlowBrush="{StaticResource AccentColorBrush}" WindowTitleBrush="{StaticResource BlueSolidColorBrush}"-->
+        Title="Rainbow-Framework" WindowState="Maximized" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="45"/>
