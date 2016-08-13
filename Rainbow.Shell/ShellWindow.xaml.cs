@@ -20,7 +20,7 @@ namespace Rainbow.Shell
     /// <summary>
     /// Interaction logic for ShellWindow.xaml
     /// </summary>
-    public partial class ShellWindow : MetroWindow
+    public partial class ShellWindow : Window
     {
         public ShellWindowViewModel ViewModel { get; set; }
         public ShellWindow()

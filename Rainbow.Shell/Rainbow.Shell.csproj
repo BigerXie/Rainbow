@@ -88,10 +88,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Actions\FullScreenAction.cs" />
     <Compile Include="Constant\RbWindowLayoutConstant.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="ShellWindowViewModel.cs" />
     <Compile Include="Models\ShellWindowModel.cs" />
+    <Compile Include="Utility\WindowHelper.cs" />
     <Compile Include="Views\Login\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
@@ -142,6 +144,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Behaviors\" />
     <Folder Include="Commands\Login\" />
     <Folder Include="Converters\" />
     <Folder Include="ViewModels\Login\" />
