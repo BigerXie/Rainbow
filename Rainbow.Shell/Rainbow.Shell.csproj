@@ -90,6 +90,7 @@
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="ShellWindowViewModel.cs" />
     <Compile Include="Models\ShellWindowModel.cs" />
+    <Compile Include="Utility\Monitor.cs" />
     <Compile Include="Utility\WindowHelper.cs" />
     <Compile Include="Views\Login\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>

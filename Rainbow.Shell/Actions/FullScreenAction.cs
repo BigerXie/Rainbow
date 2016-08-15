@@ -12,6 +12,12 @@ using System.Windows.Media;
 
 namespace Rainbow.Shell.Actions
 {
+    /// <summary>
+    /// Creating custom triggers and actions:
+    /// https://msdn.microsoft.com/en-us/library/ff724707(v=expression.40).aspx
+    /// Creating custom behaviors:
+    /// https://msdn.microsoft.com/en-us/library/ff724708(v=expression.40).aspx
+    /// </summary>
     public class FullScreenAction : TargetedTriggerAction<Window>
     {
         protected override void OnAttached()

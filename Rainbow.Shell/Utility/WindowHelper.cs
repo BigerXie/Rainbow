@@ -13,24 +13,22 @@ namespace Rainbow.Shell.Utility
         private static WindowState _WindowState;
         private static WindowStyle _WindowStyle;
         private static ResizeMode _ResizeMode;
-        private static double _LeftDistance;
-        private static double _TopDistance;
-        private static double _WindowHeight;
-        private static double _WindowWidth;
+        private static Rect _WindowRect;
 
         public static void FullScreen(this Window window)
         {
             if (IsFullScreen)
                 return;
             StoreWindowState(window);
+            var monitor = Monitor.GetCurrentMonitor(window);
             window.WindowState = WindowState.Normal;
             window.WindowStyle = WindowStyle.None;
             window.ResizeMode = ResizeMode.NoResize;
             window.Topmost = true;
-            window.Left = 0.0;
-            window.Top = 0.0;
-            window.Width = SystemParameters.PrimaryScreenWidth;
-            window.Height = SystemParameters.PrimaryScreenHeight;
+            window.Left = monitor.Bounds.Location.X;
+            window.Top = monitor.Bounds.Location.Y;
+            window.Width = monitor.Bounds.Size.Width; //SystemParameters.PrimaryScreenWidth
+            window.Height = monitor.Bounds.Size.Height; //SystemParameters.PrimaryScreenHeight
             IsFullScreen = true;
         }
         public static void ExitFullScreen(this Window window)
@@ -41,10 +39,10 @@ namespace Rainbow.Shell.Utility
             window.WindowStyle = _WindowStyle;
             window.ResizeMode = _ResizeMode;
             window.Topmost = false;
-            window.Left = _LeftDistance;
-            window.Top = _TopDistance;
-            window.Width = _WindowWidth;
-            window.Height = _WindowHeight;
+            window.Left = _WindowRect.Location.X;
+            window.Top = _WindowRect.Location.Y;
+            window.Width = _WindowRect.Size.Width;
+            window.Height = _WindowRect.Size.Height;
             IsFullScreen = false;
         }
         private static void StoreWindowState(Window window)
@@ -52,10 +50,9 @@ namespace Rainbow.Shell.Utility
             _WindowState = window.WindowState;
             _WindowStyle = window.WindowStyle;
             _ResizeMode = window.ResizeMode;
-            _LeftDistance = window.Left;
-            _TopDistance = window.Top;
-            _WindowHeight = window.Height;
-            _WindowWidth = window.Width;
+            _WindowRect = new Rect();
+            _WindowRect.Location = new Point() { X = window.Left, Y = window.Top };
+            _WindowRect.Size = new Size() { Width = window.Width, Height = window.Height };
         }
     }
 }
