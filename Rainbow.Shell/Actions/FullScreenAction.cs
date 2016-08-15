@@ -9,6 +9,7 @@ using Rainbow.Shell.Utility;
 using System.Windows.Controls;
 using Rainbow.Controls;
 using System.Windows.Media;
+using Rainbow.Shell.Constant;
 
 namespace Rainbow.Shell.Actions
 {
@@ -42,12 +43,12 @@ namespace Rainbow.Shell.Actions
                 return;
             if (isFullScreen)
             {
-                button.IconPath = Application.Current.Resources["Path_ExitFullDisplay"] as Geometry;
+                button.IconPath = Application.Current.Resources[RbResourceKey.Path_ExitFullDisplay] as Geometry;
                 button.ToolTip = "Exit FullScreen";
             }
             else
             {
-                button.IconPath = Application.Current.Resources["Path_FullDisplay"] as Geometry;
+                button.IconPath = Application.Current.Resources[RbResourceKey.Path_FullDisplay] as Geometry;
                 button.ToolTip = "Enter FullScreen";
             }
         }
