@@ -21,8 +21,21 @@ namespace Rainbow.Controls
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(RbPage), new FrameworkPropertyMetadata(typeof(RbPage)));
         }
+        public RbPage()
+        {
+            Loaded += RbPage_Loaded;
+            Unloaded += RbPage_Unloaded;
+        }
 
+        void RbPage_Unloaded(object sender, RoutedEventArgs e)
+        {
+            VisualStateManager.GoToState(this, "ZoomIn", true);
+        }
 
+        void RbPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            VisualStateManager.GoToState(this, "ZoomOut", true);
+        }
 
         public object HeaderContent
         {
@@ -69,6 +82,8 @@ namespace Rainbow.Controls
         // Using a DependencyProperty as the backing store for Title.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty TitleProperty =
             DependencyProperty.Register("Title", typeof(string), typeof(RbPage), new PropertyMetadata(null));
+
+        
 
     }
 }

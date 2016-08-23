@@ -8,6 +8,6 @@ namespace Rainbow.Shell.Constant
 {
     public class RbWindowLayoutConstant
     {
-        public const string MainGrid = "MainGrid";
+        public const string MainPlaceHolder = "MainPlaceHolder";
     }
 }

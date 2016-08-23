@@ -1,4 +1,5 @@
 ﻿using Rainbow.Shell.Constant;
+using Rainbow.Shell.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,34 @@ namespace Rainbow.Shell
             this.ViewModel.MenuItems.Add(new Models.MenuItem() { Title = "功能目录", Icon = "/Images/Catalog.png" });
             this.rbPageBar.ItemsSource = this.ViewModel.MenuItems;
             
+        }
+        private FunctionCatalogPage _CatalogPage = new FunctionCatalogPage();
+        private PersonPage _PersonPage = new PersonPage();
+        private MessagePage _MessagePage = new MessagePage();
+        private SettingPage _SettingPage = new SettingPage();
+        private void CatalogButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainPlaceHolder.Child = _CatalogPage;
+        }
+
+        private void UserButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainPlaceHolder.Child = _PersonPage;
+        }
+
+        private void MessageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainPlaceHolder.Child = _MessagePage;
+        }
+
+        private void SetupButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainPlaceHolder.Child = _SettingPage;
+        }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainPlaceHolder.Child =null;
         }
     }
 }

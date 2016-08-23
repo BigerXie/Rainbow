@@ -21,14 +21,14 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                <rbControls:RbIconButton IconPath="{StaticResource Path_Catalog}"></rbControls:RbIconButton>
-                <rbControls:RbIconButton IconPath="{StaticResource Path_User}"></rbControls:RbIconButton>
-                <rbControls:RbIconButton IconPath="{StaticResource Path_Message}" IconHeight="25"></rbControls:RbIconButton>
-                <rbControls:RbIconButton IconPath="{StaticResource Path_Setup}"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Catalog}" Name="CatalogButton" Click="CatalogButton_Click"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_User}" Name="UserButton" Click="UserButton_Click"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Message}" Name="MessageButton" Click="MessageButton_Click" IconHeight="25"></rbControls:RbIconButton>
+                <rbControls:RbIconButton IconPath="{StaticResource Path_Setup}" Name="SetupButton" Click="SetupButton_Click"></rbControls:RbIconButton>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1" Background="{StaticResource BlueSolidColorBrush}"/>
-        <Border Grid.Row="2" Background="{StaticResource SilverSolidColorBrush}" Name="MainPlaceHolder">
+        <Grid Grid.Row="2" Background="{StaticResource SilverSolidColorBrush}">
             <rbControls:RbPage Icon="/Images/Catalog.png" Title="功能目录">
                 <rbControls:RbPage.HeaderContent>
                     <TextBlock Text="Say Hi RainBow!"/>
@@ -39,7 +39,10 @@
                     </Grid>
                 </rbControls:RbPage.Content>
             </rbControls:RbPage>
-        </Border>
+            <Border Name="MainPlaceHolder">
+
+            </Border>
+        </Grid>
         <Grid Grid.Row="3" Background="{StaticResource BlueSolidColorBrush}"/>
         <Grid Grid.Row="4" Background="{StaticResource BlackSolidColorBrush5}" Name="FooterGrid">
             <Grid.ColumnDefinitions>
@@ -49,7 +52,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Border BorderBrush="{DynamicResource BorderGrayGradientBrush}" BorderThickness="0,0,2,0" Margin="4,0,0,0" Padding="0,0,4,0">
-                    <rbControls:RbIconButton IconPath="{StaticResource Path_HomePage}" Width="28" Height="28" IconHeight="24" IconWidth="24"></rbControls:RbIconButton>
+                    <rbControls:RbIconButton IconPath="{StaticResource Path_HomePage}" Click="HomeButton_Click" Width="28" Height="28" IconHeight="24" IconWidth="24"></rbControls:RbIconButton>
                 </Border>
                 <Border BorderBrush="{DynamicResource BorderGrayGradientBrush}" BorderThickness="0,0,2,0" Margin="4,0" Padding="0,0,4,0">
                     <rbControls:RbIconButton IconPath="{DynamicResource Path_FullDisplay}" Width="28" Height="28" IconHeight="20" IconWidth="20">

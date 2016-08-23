@@ -10,6 +10,9 @@
     <Color x:Key="BlackColor5">#24272C</Color>
     <Color x:Key="BlackColor6">#FF4D4D4D</Color>
     <Color x:Key="BlackColor7">#16181A</Color>
+
+    <Color x:Key="RedColor">#F75C56</Color>
+    <Color x:Key="GreenColor">#5C8C42</Color>
     
     <Color x:Key="WhiteColor">#FFFFFFFF</Color>
     
@@ -47,6 +50,8 @@
     <SolidColorBrush x:Key="BlackSolidColorBrush5" Color="{DynamicResource BlackColor5}"/>
     <SolidColorBrush x:Key="BlackSolidColorBrush6" Color="{DynamicResource BlackColor6}"/>
     <SolidColorBrush x:Key="BlackSolidColorBrush7" Color="{DynamicResource BlackColor7}"/>
+    <SolidColorBrush x:Key="RedSolidColorBrush" Color="{DynamicResource RedColor}"/>
+    <SolidColorBrush x:Key="GreenSolidColorBrush" Color="{DynamicResource GreenColor}"/>
     
     <LinearGradientBrush x:Key="HeaderGradientBrush" StartPoint="0.5,0" EndPoint="0.5,1">
         <GradientStop Color="{DynamicResource BlackColor1}" Offset="0"/>
