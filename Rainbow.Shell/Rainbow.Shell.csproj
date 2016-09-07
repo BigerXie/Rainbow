@@ -87,13 +87,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Actions\FullScreenAction.cs" />
-    <Compile Include="Constant\RbResourceKey.cs" />
-    <Compile Include="Constant\RbWindowLayoutConstant.cs" />
+    <Compile Include="ShellConstant.cs" />
     <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Portal.cs" />
     <Compile Include="ShellWindowViewModel.cs" />
-    <Compile Include="Models\ShellWindowModel.cs" />
     <Compile Include="Utility\Monitor.cs" />
     <Compile Include="Utility\WindowHelper.cs" />
+    <Compile Include="ViewModels\FunctionCatalogViewModel.cs" />
     <Compile Include="Views\FunctionCatalogPage.xaml.cs">
       <DependentUpon>FunctionCatalogPage.xaml</DependentUpon>
     </Compile>
@@ -182,7 +182,6 @@
     <Folder Include="Behaviors\" />
     <Folder Include="Commands\" />
     <Folder Include="Converters\" />
-    <Folder Include="ViewModels\Login\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rainbow.Client.Core\Rainbow.Client.Core.csproj">

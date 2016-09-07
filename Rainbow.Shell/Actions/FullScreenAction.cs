@@ -9,7 +9,7 @@ using Rainbow.Shell.Utility;
 using System.Windows.Controls;
 using Rainbow.Controls;
 using System.Windows.Media;
-using Rainbow.Shell.Constant;
+using Rainbow.Shell;
 
 namespace Rainbow.Shell.Actions
 {

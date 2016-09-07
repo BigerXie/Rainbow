@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rainbow.Shell.Constant
+namespace Rainbow.Shell
 {
-    public class RbWindowLayoutConstant
+    public class Portal
     {
-        public const string MainPlaceHolder = "MainPlaceHolder";
+
     }
 }
