@@ -4,7 +4,7 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
         xmlns:actions="clr-namespace:Rainbow.Shell.Actions"              
         xmlns:rbControls="clr-namespace:Rainbow.Controls;assembly=Rainbow.Controls"
-        Icon="/Images/RainbowCloud.png" Name="mainWindow" Height="600" Width="800" 
+        Icon="/Images/RainbowCloud.png" Name="mainWindow" Height="600" Width="800"
         Title="Rainbow-Framework" WindowState="Maximized" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>

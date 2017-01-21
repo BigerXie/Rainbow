@@ -7,7 +7,7 @@ namespace Rainbow.Core.Container
 {
     internal class SpringObjectContainer : IObjectContainer
     {
-        private readonly string _ConfigPath = @"Config\SpringConfig.xml";
+        private readonly string _ConfigPath = @"Config\SpringObjects.xml";
 
         private bool _IsInit = false;
 

@@ -15,8 +15,24 @@ namespace Rainbow.Shell
     {
         public App()
         {
-            //pack://application:,,,/Rainbow.Shell;component/Views/Login/LoginWindow.xaml
-            this.StartupUri = new Uri("pack://application:,,,/Rainbow.Shell;component/ShellWindow.xaml");
+            DispatcherUnhandledException += App_DispatcherUnhandledException;
+            this.Exit += App_Exit;
+            this.Startup += Application_Startup;
+        }
+
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            Portal.Run();
+        }
+
+        private void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+        {
+            
+        }
+
+        private void App_Exit(object sender, ExitEventArgs e)
+        {
+            
         }
     }
 }

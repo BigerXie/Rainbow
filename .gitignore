@@ -19,3 +19,17 @@ Rainbow.Share/obj/Debug/
 /Rainbow.Controls.Test/bin/Debug
 RainbowSolution.v12.suo
 .vs/
+packages/Spring.Services.2.0.1/Spring.Services.2.0.1.nupkg
+packages/Spring.Services.2.0.1/lib/net35/Spring.Services.dll
+packages/Spring.Services.2.0.1/lib/net35/Spring.Services.pdb
+packages/Spring.Services.2.0.1/lib/net35/Spring.Services.xml
+packages/Spring.Services.2.0.1/lib/net40/Spring.Services.dll
+packages/Spring.Services.2.0.1/lib/net40/Spring.Services.pdb
+packages/Spring.Services.2.0.1/lib/net40/Spring.Services.xml
+packages/Spring.Services.2.0.1/lib/net45/Spring.Services.dll
+packages/Spring.Services.2.0.1/lib/net45/Spring.Services.pdb
+packages/Spring.Services.2.0.1/lib/net45/Spring.Services.xml
+Rainbow.Contracts/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Rainbow.Contracts/obj/
+Rainbow.Server/bin/Debug/
+Rainbow.Server/obj/Debug/

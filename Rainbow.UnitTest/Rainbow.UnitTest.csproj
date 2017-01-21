@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Service\HelloService.cs" />
     <Compile Include="Service\IHelloService.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Container\ObjectFactoryUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,8 +71,9 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Config\Rainbow.xml" />
-    <Content Include="Config\SpringConfig.xml">
+    <Content Include="Config\SpringObjects.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <Choose>

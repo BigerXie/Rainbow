@@ -40,6 +40,7 @@ namespace Rainbow.Core.Container
             //this._Containers.Add(new MefObjectContainer());
             this._Containers.Add(new SpringObjectContainer());
         }
+
         internal void InitContainer()
         {
             foreach (var container in this._Containers)
@@ -47,10 +48,12 @@ namespace Rainbow.Core.Container
                 container.InitContainer();
             }
         }
+
         public T GetObject<T>()
         {
             return (T)this.GetObject<T>(typeof(T).FullName);
         }
+
         public T GetObject<T>(string name)
         {
             foreach (var container in this._Containers)

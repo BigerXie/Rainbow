@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <object id="Rainbow.Server.Services.BussinessService" type="Rainbow.Server.Services.BussinessService,Rainbow.Server"></object>
+  <alias name="Rainbow.Server.Services.BussinessService" alias="Rainbow.Contracts.IBussinessService" />
+  <object id="BussinessServiceHost" type="Spring.ServiceModel.Activation.ServiceHostFactoryObject, Spring.Services">
+    <property name="TargetName" value="Rainbow.Server.Services.BussinessService" />
+  </object>
+  <object id="Rainbow.Server.Services.MessageService" type="Rainbow.Server.Services.MessageService,Rainbow.Server"></object>
+  <alias name="Rainbow.Server.Services.MessageService" alias="Rainbow.Contracts.IMessageService" />
+  <object id="MessageServiceHost" type="Spring.ServiceModel.Activation.ServiceHostFactoryObject, Spring.Services">
+    <property name="TargetName" value="Rainbow.Server.Services.MessageService" />
+  </object>
+</objects>

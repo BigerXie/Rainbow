@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Rainbow.Shell
 {
-    public class Portal
+    public static class Portal
     {
-
+        public static void Run()
+        {
+            ShellWindow window = new ShellWindow();
+            window.Show();
+        }
     }
 }
