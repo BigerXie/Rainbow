@@ -68,7 +68,6 @@
       <Name>Rainbow.Share</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Config\Rainbow.xml" />
     <Content Include="Config\SpringObjects.xml">

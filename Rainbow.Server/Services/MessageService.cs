@@ -10,7 +10,7 @@ namespace Rainbow.Server.Services
     {
         public void Test(string request)
         {
-            
+            Console.WriteLine("MessageService Receive...");
         }
     }
 }

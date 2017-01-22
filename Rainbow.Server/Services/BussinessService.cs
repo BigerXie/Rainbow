@@ -11,6 +11,7 @@ namespace Rainbow.Server.Services
     {
         public ResponseMessage Process(RequestMessage request)
         {
+            Console.WriteLine("BussinessService Receive...");
             return new ResponseMessage() { Status = ResponseStatus.OK, Result = "Hello Client" };
         }
     }
